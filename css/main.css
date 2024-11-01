@@ -293,6 +293,16 @@ address {
     padding: 112px 0;
   }
 
+  @media (min-resolution: 192dpi) {
+    .section_top {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/Dark-bg-tablet@2x.jpg);
+    }
+  }
+
   .section_top_title {
     font-size: 56px;
     line-height: 1.07143;
@@ -315,6 +325,16 @@ address {
 
     padding: 188px 0;
     max-width: 1440px;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .section_top {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-1@2x.jpg);
+    }
   }
 
   .section_top_title {
