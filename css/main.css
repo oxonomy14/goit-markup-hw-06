@@ -238,7 +238,7 @@ address {
   margin: 0 auto;
 }
 
-.media (min-resolution: 192dpi) {
+@media (min-resolution: 192dpi) {
   .section_top {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
