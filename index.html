@@ -72,7 +72,7 @@
           <h1 class="section_top_title">
             Effective Solutions for Your Business
           </h1>
-          <button class="section-top-button" type="button">
+          <button class="section-top-button" type="button" data-modal-open>
             Order Service
           </button>
         </div>
@@ -575,7 +575,7 @@
       </section>
     </main>
 
-    <!--<footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="footer-container-logo">
           <a class="footer_logo" href="./index.html"
@@ -668,7 +668,6 @@
             /></label>
             <button class="footer-form-button" type="submit">
               Subscribe
-
               <svg class="footer-form-button-svg" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
@@ -676,10 +675,122 @@
           </form>
         </div>
       </div>
-    </footer>-->
-    <!-- <div class="modal-overlay is-open">
+    </footer>
+    <div class="modal-overlay-menumobile">
+      <div class="modal-menumobile">
+        <button class="modal-menumobile-btn-close" type="button">
+          <svg class="modal-menumobile-btn-close-svg" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav class="nav-menumobile">
+          <ul class="nav-menumobile-list">
+            <li class="nav-menumobile-item">
+              <a
+                class="nav-menumobile-link active-page-mobilemenu"
+                href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="nav-menumobile-item">
+              <a class="nav-menumobile-link" href="">Portfolio</a>
+            </li>
+            <li class="nav-menumobile-item">
+              <a class="nav-menumobile-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="address-menumobile">
+          <ul class="address-menumobile-list">
+            <li class="address-menumobile-item">
+              <a
+                class="address-menumobile-link active-page-mobilemenu"
+                href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="address-menumobile-item">
+              <a
+                class="address-menumobile-link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <div class="menumobile-socialbox">
+          <ul class="menumobile-socialbox-list">
+            <li class="menumobile-socialbox-item">
+              <a
+                class="menumobile-socialbox-item-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  class="menumobile-socialbox-svg-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-instagramm"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menumobile-socialbox-item">
+              <a
+                class="menumobile-socialbox-item-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  class="menumobile-socialbox-svg-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-X"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menumobile-socialbox-item">
+              <a
+                class="menumobile-socialbox-item-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  class="menumobile-socialbox-svg-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-F"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menumobile-socialbox-item">
+              <a
+                class="menumobile-socialbox-item-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  class="menumobile-socialbox-svg-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-in"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="modal-overlay" data-modal>
       <div class="modal">
-        <button class="modal-btn-close" type="button">
+        <button class="modal-btn-close" type="button" data-modal-close>
           <svg class="modal-btn-close-svg" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -776,6 +887,7 @@
           <button class="form-order-service-btn" type="submit">Send</button>
         </form>
       </div>
-    </div>-->
+    </div>
+    <script src="./js/modal.js" type="module"></script>
   </body>
 </html>
