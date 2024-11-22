@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -44,7 +45,7 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="btn-menu-mobile">
+        <button type="button" class="menu-open-btn js-open-menu">
           <svg class="menu-mobile-svg-icon" width="16.8" height="14.4">
             <use href="./images/icons.svg#icon-menu-mobile"></use>
           </svg>
@@ -455,7 +456,7 @@
           </ul>
         </div>
       </section>
-      <section class="section_fourth">
+      <section class="section_fourth" id="portfolio">
         <div class="container">
           <h2 class="section_fourth_main_title">Our Portfolio</h2>
           <ul class="section_fourth_list">
@@ -806,9 +807,9 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay-menumobile">
+    <div class="modal-overlay-menumobile js-menu-container">
       <div class="modal-menumobile">
-        <button class="modal-menumobile-btn-close" type="button">
+        <button class="modal-menumobile-btn-close js-close-menu" type="button">
           <svg class="modal-menumobile-btn-close-svg" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -823,7 +824,9 @@
               >
             </li>
             <li class="nav-menumobile-item">
-              <a class="nav-menumobile-link" href="">Portfolio</a>
+              <a class="nav-menumobile-link mobile-modal-link" href="#portfolio"
+                >Portfolio</a
+              >
             </li>
             <li class="nav-menumobile-item">
               <a class="nav-menumobile-link" href="">Contacts</a>
@@ -1019,5 +1022,13 @@
       </div>
     </div>
     <script src="./js/modal.js" type="module"></script>
+    <script src="./js/menu.js" type="module"></script>
+    <!--  -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

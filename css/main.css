@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -61,11 +65,10 @@ section {
   padding: 96px 0;
 }
 
-@media (min-width: 768px) {
-}
-
 @media (min-width: 1158px) {
-  padding: 120px 0;
+  section {
+    padding: 120px 0;
+  }
 }
 
 p,
@@ -109,7 +112,7 @@ address {
 
 .nav_header {
   display: flex;
-  margin-right: auto;
+  /*margin-right: auto;*/
 }
 
 .main_logo {
@@ -127,13 +130,15 @@ address {
   color: #2e2f42;
 }
 
-.btn-menu-mobile {
+.menu-open-btn {
+  display: block;
   border: none;
   background-color: transparent;
+  margin-left: auto;
 }
 
 @media (min-width: 768px) {
-  .btn-menu-mobile {
+  .menu-open-btn {
     display: none;
   }
 
@@ -414,23 +419,13 @@ address {
 
 @media screen and (min-width: 768px) {
   .section_second_list {
-    gap: 24px;
-    /*row-gap: 24px;*/
-    /*column-gap: 72px;*/
+    gap: 72px 24px;
   }
 
   .section_second_li {
     width: calc((100% - 24px) / 2);
   }
 
-  /* .section_second_li:nth-child(1) {
-    margin-bottom: 72px;
-  }
-
-  .section_second_li:nth-child(2) {
-    margin-bottom: 72px;
-  }
-*/
   .section-second-subtitle {
     text-align: left;
   }
@@ -509,10 +504,9 @@ address {
 
 @media (min-width: 768px) {
   .section_third_list {
-    gap: 24px;
+    gap: 64px 24px;
     padding-left: 92px;
     padding-right: 92px;
-    /*row-gap: 64px;*/
   }
 
   .section_third_li {
@@ -885,7 +879,7 @@ address {
 
 @media (min-width: 768px) {
   .footer-container {
-    gap: 24px;
+    gap: 72px 24px;
     max-width: 584px;
   }
 
